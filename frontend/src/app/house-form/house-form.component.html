@@ -1,3 +1,241 @@
-<p>
-  house-form works!
-</p>
+
+  <p>house-form works!</p>
+  <style type="text/css">
+          @import "house-form.component.css";
+    </style>
+    <!-- Form Name -->
+    <legend>House</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="house_id">HOUSE ID</label>
+      <div class="col-md-4">
+      <input id="product_id" name="product_id" placeholder="PRODUCT ID" class="form-control input-md" required="" type="text">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="product_name">HOUSE NAME</label>
+      <div class="col-md-4">
+      <input id="product_name" name="product_name" placeholder="HOUSE NAME" class="form-control input-md" required="" type="text">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="product_name_fr">HOUSE DESCRIPTION FR</label>
+      <div class="col-md-4">
+      <input id="house_name_fr" name="house_name_fr" placeholder="HOUSE DESCRIPTION FR" class="form-control input-md" required="" type="text">
+
+      </div>
+    </div>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="house_type">HOUSE TYPE</label>
+      <div class="col-md-4">
+        <select id="house_type" name="house_type" class="form-control">
+           <option ng-repeat="c in component.type_name">{{c}}</option>
+        </select>
+      </div>
+    </div>
+
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="address_street">STREET</label>
+      <div class="col-md-4">
+      <input id="address_street" name="address_street" placeholder="street name" class="form-control input-md" required="" type="text">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="address_city">CITY</label>
+      <div class="col-md-4">
+      <input id="address_city" name="address_city" placeholder="city" class="form-control input-md" required="" type="text">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="postCode">POSTCODE</label>
+      <div class="col-md-4">
+      <input id="postCode" name="postCode" placeholder="postCode" class="form-control input-md" required="" type="text">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="address_country">COUNTRY</label>
+      <div class="col-md-4">
+      <input id="address_country" name="address_country" placeholder="CANADA" class="form-control input-md" required="" type="text">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="house_price">PRICE</label>
+      <div class="col-md-4">
+      <input id="house_price" name="house_price" placeholder="house price" class="form-control input-md" required="" type="number">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="house_size">SIZE</label>
+      <div class="col-md-4">
+        <input id="house_size" name="house_size" placeholder="size" class="form-control input-md" required="" type="number">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="rooms">NUMBER OF ROOMS</label>
+      <div class="col-md-4">
+        <input id="rooms" name="rooms" placeholder="0" class="form-control input-mf" required="" type="number">
+
+      </div>
+    </div>
+
+    <!-- Search input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="bathrooms">NUMBER OF BATH</label>
+      <div class="col-md-4">
+        <input id="bathrooms" name="bathrooms" placeholder="0" class="form-control input-md" required="" type="number">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="garage">NUMBER OF GARAGE</label>
+      <div class="col-md-4">
+      <input id="garage" name="garage" placeholder="0" class="form-control input-md" required="" type="number">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="author">BASEMENT</label>
+      <div class="col-md-4">
+      <textarea id="basement" name="basement" placeholder="info about basement" class="form-control input-md" required="" type="text">
+      </textarea>
+      </div>
+    </div>
+
+    <!-- checkbox input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="air_condition">AC</label>
+      <div class="col-md-4">
+      <input id="air_condition" name="air_condition" value="true" class="form-control input-md" type="checkbox">yes
+      <input id="air_condition" name="air_condition" value="false" class="form-control input-md" type="checkbox">no
+
+      </div>
+    </div>
+
+    <!-- checkbox input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="gas_heat">GASHEAT</label>
+      <div class="col-md-4">
+      <input id="gas_heat" name="gas_heat" value="true" class="form-control input-md"  type="checkbox">yes
+      <input id="gas_heat" name="gas_heat" value="false" class="form-control input-md" type="checkbox">no
+
+      </div>
+    </div>
+
+    <!-- checkbox input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="fenceYard">FENCEYARD</label>
+      <div class="col-md-4">
+      <input id="fenceYard" name="fenceYard" value="true" class="form-control input-md" type="checkbox">yes
+      <input id="fenceYard" name="fenceYard" value="false" class="form-control input-md" type="checkbox">no
+      </div>
+    </div>
+
+      <!-- checkbox input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="washer_dryer">WASHER/DRYER</label>
+        <div class="col-md-4">
+        <input id="washer_dryer" name="washer_dryer" value="true" class="form-control input-md" type="checkbox">yes
+        <input id="washer_dryer" name="washer_dryer" value="false" class="form-control input-md" type="checkbox">no
+        </div>
+      </div>
+
+      <!-- checkbox input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="deck">DECK</label>
+        <div class="col-md-4">
+        <input id="deck" name="deck" value="true" class="form-control input-md" type="checkbox">yes
+        <input id="deck" name="deck" value="false" class="form-control input-md" type="checkbox">no
+        </div>
+      </div>
+
+      <!-- checkbox input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="balcony">BALCONY</label>
+        <div class="col-md-4">
+        <input id="balcony" name="balcony" value="true" class="form-control input-md" type="checkbox">yes
+        <input id="balcony" name="balcony" value="false" class="form-control input-md" type="checkbox">no
+        </div>
+      </div>
+
+      <!-- checkbox input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="storage">STORAGE</label>
+        <div class="col-md-4">
+        <input id="storage" name="storage" value="true" class="form-control input-md" type="checkbox">yes
+        <input id="storage" name="storage" value="false" class="form-control input-md" type="checkbox">no
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="introduction">INTRODUCTION</label>
+        <div class="col-md-4">
+        <textarea id="introduction" name="introduction" placeholder="info" class="form-control input-md" required="" type="text">
+        </textarea>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="house_name">HOUSE NAME</label>
+        <div class="col-md-4">
+        <input id="house_name" name="house_name" class="form-control input-md"  type="text">
+
+        </div>
+      </div>
+
+        <!-- File Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="filebutton">main_image</label>
+      <div class="col-md-4">
+        <input id="filebutton" name="filebutton" class="input-file" type="file">
+      </div>
+    </div>
+    <!-- File Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="filebutton">auxiliary_images</label>
+      <div class="col-md-4">
+        <input id="filebutton" name="filebutton" class="input-file" type="file">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+      <div class="col-md-4">
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+      </div>
+      </div>
+
+    </div></div></fieldset>
