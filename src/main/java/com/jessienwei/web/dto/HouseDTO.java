@@ -23,6 +23,7 @@ import javax.validation.constraints.NotBlank;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 
@@ -86,7 +87,7 @@ public class HouseDTO implements Serializable {
 
 	@OneToOne
 	@JoinColumn(name = "user_id")
-	//@NotBlank
+	@NotBlank
 	public UserDTO getUser() {
 		return user;
 	}

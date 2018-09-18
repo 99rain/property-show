@@ -37,12 +37,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/signup").permitAll();
 	}
 
-	@Bean
+	/*@Bean
 	public BCryptPasswordEncoder passwordEncoder(){
 		BCryptPasswordEncoder bCryptPasswordEncoder =
 				new BCryptPasswordEncoder();
 		return bCryptPasswordEncoder;
-	}
+	}*/
 	}
 		/*auth.
 			jdbcAuthentication()

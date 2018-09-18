@@ -20,8 +20,7 @@ public class ImageDTO implements Serializable {
 
 	private Long imageId;
 
-	@Column(name = "image_name")
-	@NotBlank
+
 	private String image_name;
 
 	private HouseDTO houseDTO;
@@ -45,14 +44,17 @@ public class ImageDTO implements Serializable {
 		this.houseDTO = houseDTO;
 	}
 
-	@Column(name = "image_path")
-	@NotBlank
+
 	private String image_path;
 
+	@Column(name = "image_name")
+	@NotBlank
 	public String getImage_name() {
 		return image_name;
 	}
 
+	@Column(name = "image_path")
+	@NotBlank
 	public String getImage_path() {
 		return image_path;
 	}
